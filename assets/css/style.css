@@ -1,7 +1,7 @@
 /* 公共部分的样式 */
 body {
     background: #ffffff;
-    font-family: 'Raleway', 'Source Han Serif', merriweatherregular, Helvetica, 'Microsoft YaHei', 'Open Sans', 'Bookman Old Style',  sans-serif;
+    font-family: Georgia, 'Raleway', 'Source Han Serif', merriweatherregular, Helvetica, 'Microsoft YaHei', 'Open Sans', 'Bookman Old Style',  sans-serif;
     font-weight: 400;
     position: relative;
 }
@@ -118,6 +118,16 @@ p {
     line-height: 26px;
     text-align: justify;
     text-indent: 2em;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+}
+.inss-graduate-p {
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+    line-height: 26px;
+    text-align: justify;
+    text-indent: 1em;
     /*font-family: Georgia, 'Times New Roman', Times, serif;*/
 }
 .inss-resource-p {
@@ -314,41 +324,23 @@ footer {
     align-items: center;
 }
 
-/* 边栏样式 */
-.sidenav {
-    width: 130px;
-    /*position: fixed;*/
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 8px 0;
+/* 人员信息 */
+.people .img {
+    height: 280px;
 }
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2196F3;
+.people .text h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.people .text .position {
+    color: #c24e4e;
     display: block;
-}
-.sidenav a:hover {
-    color: #064579;
-}
-.maincontent {
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
-    padding: 0px 10px;
-}
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }
 
 @media only screen and (max-width: 1199px) {
     .flexslider h1 { font-size: 30px; }
     .flexslider h2 { font-size: 24px; }
 }
-
 /* start templatemo 768 media quires */
 @media only screen and ( max-width: 768px ) {
     .navbar-default .navbar-brand { margin-left: 20px; }
