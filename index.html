@@ -75,17 +75,17 @@
 	            	</div>
 					<div class="inss-p">
 						<strong>欢迎加入INSS实验室</strong><i class="fa fa-arrow-circle-right"></i>[<a href="join.html">详细信息</a>]<br />
-						&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i>诚聘网络系统和物联网等方向教师、研究人员！[<a href="https://www.nbu.edu.cn/shizi">人才引进政策</a>]<br />
-						&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i>欢迎优秀本科生报考本实验室的硕士研究生<br />
-						&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i>实验室的毕业生就业于阿里巴巴、网易等著名IT公司<br />
-						&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i>实验室会推荐优秀的本科生到国内一流高校和实验室读研<br />
+						<i class="fa fa-hand-o-right fa-1x"></i>诚聘网络系统和物联网等方向教师、研究人员！[<a href="https://www.nbu.edu.cn/shizi">人才引进政策</a>]<br />
+						<i class="fa fa-hand-o-right fa-1x"></i>欢迎优秀本科生报考本实验室的硕士研究生<br />
+						<i class="fa fa-hand-o-right fa-1x"></i>实验室的毕业生就业于阿里巴巴、网易等著名IT公司<br />
+						<i class="fa fa-hand-o-right fa-1x"></i>实验室会推荐优秀的本科生到国内一流高校和实验室读研<br />
 	            	</div>
 					<div class="inss-p">
                         如果你是喜欢宁波、想在宁波大学工作生活、关注INSSLab的优秀博士；如果你是立志从事网络系统、物联网系统和安全、智能机器人技术、机器学习等领域研究的本科生，想报考INSSLab的研究生，请根据自己的研究兴趣(可结合具体联系老师的研究方向)将简历发送给下列老师:<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=7920">金光教授</a>(<strong>jinguang@nbu.edu.cn</strong>)<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=18584">江先亮博士</a>(<strong>jiangxianliang@nbu.edu.cn</strong>)<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=18585">陈海明副教授</a>(<strong>chenhaiming@nbu.edu.cn</strong>)<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=7954">谢志军副教授</a>(<strong>xiezhijun@nbu.edu.cn</strong>)<br />
+                        <i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=7920">金光教授</a>(<strong>jinguang@nbu.edu.cn</strong>)<br />
+                        <i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=18584">江先亮博士</a>(<strong>jiangxianliang@nbu.edu.cn</strong>)<br />
+                        <i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=18585">陈海明副教授</a>(<strong>chenhaiming@nbu.edu.cn</strong>)<br />
+                        <i class="fa fa-hand-o-right fa-1x"></i><a href="http://tutor.eol.cn/web/school/info?school_id=112&dsid=7954">谢志军副教授</a>(<strong>xiezhijun@nbu.edu.cn</strong>)<br />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果你是宁波大学在校的本科生且为计算机、物联网、通信等专业，具有软件或硬件的基本技能，想进入INSSLab进行学习和科研，请将简历发送至感兴趣的老师。
 	            	</div>
 	            </section>
@@ -179,7 +179,7 @@
     				</a>
     			</div>
     		</div>
-    	</div>
+		</div>
 		<!-- 页面尾部 -->
 		<br />
 		<br />
@@ -232,49 +232,5 @@
 				$('#inssCarousel .list-group-item').outerHeight(triggerheight);
 			});
 		</script>
-		<!-- 返回顶部的脚本，每个页面都需要 -->
-        <script>
-            $(document).ready(function(){
-                $('.custom-menu a[href^="#"], .intro-scroller .inner-link').on('click',function (e) {
-                    e.preventDefault();
-
-                    var target = this.hash;
-                    var $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 900, 'swing', function () {
-                        window.location.hash = target;
-                    });
-                });
-
-                $('a.page-scroll').bind('click', function(event) {
-                    var $anchor = $(this);
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1500, 'easeInOutExpo');
-                    event.preventDefault();
-                });
-
-               $(".nav a").on("click", function(){
-                     $(".nav").find(".active").removeClass("active");
-                    $(this).parent().addClass("active");
-            	});
-
-                $('body').append('<div id="toTop" class="btn btn-primary color1"><span class="glyphicon glyphicon-chevron-up"></span></div>');
-                    $(window).scroll(function () {
-                        if ($(this).scrollTop() != 0) {
-                            $('#toTop').fadeIn();
-                        } else {
-                            $('#toTop').fadeOut();
-                        }
-                    });
-                $('#toTop').click(function(){
-                    $("html, body").animate({ scrollTop: 0 }, 700);
-                    return false;
-                });
-
-            });
-        </script>
 	</body>
 </html>
